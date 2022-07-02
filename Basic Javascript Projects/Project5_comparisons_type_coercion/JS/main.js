@@ -20,6 +20,7 @@ function infinity() {
 function neginfinity() {
     document.getElementById("neginfinite").innerHTML=(-1.8076931348623157E308);
 }
+//Here there be Booleans//
 function boo1() {
     document.getElementById("bool1").innerHTML=(17>=3);
 }
@@ -51,4 +52,24 @@ function eqd() {
     var eqa4=10;
     var eqa4b=1;
     document.getElementById("eqa4").innerHTML=(eqa4===eqa4b);
+}
+//And OR//
+function andfunction() {
+    document.getElementById("and").innerHTML=(3>2 && 5>3);
+}
+function andfunctionb() {
+    document.getElementById("andfunctionb").innerHTML=(5<3 && 3>17);
+}
+function orfunction() {
+    document.getElementById("orfunction").innerHTML=(1>5 || 3>2);
+}
+function orfunctionb() {
+    document.getElementById("orfunctionb").innerHTML=(1>5 || 6>17);
+}
+//NOT//
+function notfunction() {
+    document.getElementById("Not").innerHTML=!(1>3);
+}
+function notfunctionb() {
+    document.getElementById("Notb").innerHTML=!(3>2);
 }
