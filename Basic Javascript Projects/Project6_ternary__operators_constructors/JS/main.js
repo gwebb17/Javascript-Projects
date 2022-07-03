@@ -29,7 +29,7 @@ document.getElementById("New_and_This").innerHTML="Emily drives a " + Emily.Vehi
 //Need help for below example//
 class Person {
     constructor(name, color, age) {
-    this.name-name;
+    this.name=name;
     this.color=color;
     this.age=age;
     };
