@@ -27,14 +27,17 @@ function newFunction() {
 document.getElementById("New_and_This").innerHTML="Emily drives a " + Emily.Vehicle_Color + "-colored " + Emily.Vehicle_Model + " manufactured in " + Emily.Vehicle_Year;
 }
 //Need help for below example//
-function Person(color, name, age) {
-    this.firstName=name;
-    this.colorName=color;
-    this.ageName=age;
+class Person {
+    constructor(name, color, age) {
+    this.name-name;
+    this.color=color;
+    this.age=age;
+    };
 }
+
     var Bill=new Person("blue", "Mercedes", 39);
-    function obFunction() {
-    document.getElementById("object").innerHTML="Bill corresponding value" + Bill.firstName;
+    function PersonFunction() {
+    document.getElementById("object").innerHTML="Bill corresponding value" + Bill.name;
 }
 
 //NESTED FUNCTION//
