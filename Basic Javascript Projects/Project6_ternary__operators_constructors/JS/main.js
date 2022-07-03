@@ -26,3 +26,24 @@ function myFunction() {
 function newFunction() {
 document.getElementById("New_and_This").innerHTML="Emily drives a " + Emily.Vehicle_Color + "-colored " + Emily.Vehicle_Model + " manufactured in " + Emily.Vehicle_Year;
 }
+//Need help for below example//
+function Person(color, name, age) {
+    this.firstName=name;
+    this.colorName=color;
+    this.ageName=age;
+}
+    var Bill=new Person("blue", "Mercedes", 39);
+    function obFunction() {
+    document.getElementById("object").innerHTML="Bill corresponding value" + Bill.firstName;
+}
+
+//NESTED FUNCTION//
+function NestedFunction() {
+    document.getElementById("Nested_Function").innerHTML=Bounce();
+    function Bounce() {
+        var Step_one=17;
+        function Plus_seven() {Step_one +=7;}
+        Plus_seven();
+        return Step_one;
+    }
+}
