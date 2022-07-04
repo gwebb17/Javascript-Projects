@@ -8,15 +8,13 @@ function givemeDate() {
         document.getElementById("dateID").innerHTML="Hours less than 18";
     }
 }
-//can't figure out why print is void, or why using doc.get element instead doesn't return result//
+//My FUNCTION USING IF/ELSE STATEMENT THAT USES INPUT VALUE//
 function myIf() {
     var Money=document.getElementById("Money").value;
-    if (Money.value<1000) {
-        print("you can take the flight");
-        /* document.getElementById("myIf").innerHTML="You don't have enough to fly"; */
+    if (Money<1000) { 
+        document.getElementById("myIf").innerHTML="You don't have enough to fly"; 
     }
-    else (Money.value>=1000) {
-        print("you can't take the flight");
-        /* document.getElementById("myIf").innerHTML="You've got enough to fly"; */
+    else if (Money>=1000) {
+         document.getElementById("myIf").innerHTML="You've got enough to fly"; 
     }
 }
