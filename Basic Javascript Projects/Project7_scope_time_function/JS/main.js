@@ -18,3 +18,18 @@ function myIf() {
          document.getElementById("myIf").innerHTML="You've got enough to fly"; 
     }
 }
+//Else if to get time of day//
+function Time_function() {
+    var Time=new Date().getHours();
+    var Reply;
+    if (Time<12 == Time>0) {
+        Reply="it is morning";
+    }
+    else if(Time>=12 ==Time<18) {
+        Reply="it is afternoon";
+    }
+    else {
+        Reply="it is evening."
+    }
+    document.getElementById("Time_of_Day").innerHTML=Reply;
+}
