@@ -45,3 +45,30 @@ function constant_Function() {
     shoes.color="red";
     document.getElementById("Constant").innerHTML=shoes.color +"<br>" + shoes.Size;
 }
+
+//let use//
+X=10;
+function let_Function() {
+    var X=2;
+    var Y="";
+    if (X<10) {
+        Y="X must equal 2";
+    }
+    else {
+        Y="X must equal 10";
+    }
+    document.getElementById("let").innerHTML=X;
+
+}
+H=5;
+function lety_Function() {
+    let H=3;
+    var I="";
+    if (H<5) {
+        I="H must equal 3";
+    }
+    else {
+        I="I must have entered the variables wrong";
+    }
+    document.getElementById("lety").innerHTML=H + "<br>" + I;
+}
