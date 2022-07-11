@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
-    //Below portion you need to use"\" to say move onto new line, and must use single ' quotes around the inner div ids since doubles would effect the starting " string quote on line 12
+    //Below portion you need to use"\" to say move onto new line, and must use single ' quotes around the inner div ids since doubles would effect the starting " string quote on line 12//
     <script>
         $(document).ready(function() {
             $("html").append(
@@ -15,6 +15,8 @@
                             <p id='1'>Paragraph 1</p>\
                             <p id='2'>Paragraph 2</p>\
                             <p id='3'>Paragraph 3</p>\
+                            <p id='4'>Paragraph 4</p>\
+                            <p id='5'>Paragraph 5</p>\
                         </div>\
                     </div>\
                 </body>"
@@ -23,8 +25,12 @@
             $("#3").click(function() {
                 $("h1").hide();
             });
+            $("#4").click(function() {
+                alert("you clicked paragraph 4");
+            });
+            $("#5").slideUp(800);
         });
     
+    
     </script>
-
 </html>
