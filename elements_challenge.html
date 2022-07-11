@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p>If I have understood this correctly then this paragraph of text should be returned when I ask it to be.</p>
+
+        <button type="button" onclick="bodyFunction()">Return Body of Doc</button>
+
+        //Place where you want the returned element to go//
+        <p id="here"></p>
+
+        <script>
+            function bodyFunction() {
+            var bodyVar=document.body.innerHTML;
+            document.getElementById("here").innerHTML=bodyVar;
+            }
+        </script>
+
+    </body>
+
+</html>
