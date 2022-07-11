@@ -114,8 +114,9 @@ function break_Function() {
 function continue_Function() {
     let answer="";
     for (let i=0; i<11; i++) {
-        if (i===7) { continue; }
-        answer+="You skipped step 7"+ i +"<br>";
+        if (i===7) {
+            answer+="You skipped step 7";
+            continue; }
     }
     document.getElementById("continue").innerHTML=answer;
 }
