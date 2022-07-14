@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href=".\Form_Challenge\form_Challenge.css">
+        <script>
+            function validateForm() {
+                let x=document.forms["myForm"]["phone"].value;
+                if (x=="") {
+                    alert("Please enter a valid phone number");
+                    return false;
+                }
+            }
+
+            function openForm() {
+                document.getElementById("thisForm").style.display="block";
+            }
+
+            function closeForm() {
+                document.getElementById("thisForm").style.display="none";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="generaltsoschicken">
+        <!--phone number with alert-->
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" value=""><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--popup form-->
+        <div class="form-popup" id="thisForm">
+            <form class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+            
+            </form>
+        </div>
+        <button type="submit" class="btn" onclick="openForm()">Open</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </div>
+    </body>
+</html>
