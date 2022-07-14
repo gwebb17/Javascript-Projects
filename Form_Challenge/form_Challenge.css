@@ -62,4 +62,6 @@
 #generaltsoschicken {
     position:center;
     border:1px dashed tomato;
+    display:flex;
+    flex-direction:column;
 }
